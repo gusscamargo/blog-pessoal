@@ -29,7 +29,7 @@ services:
       MONGO_INITDB_DATABASE: blog
 
   mongo-express:
-    image: mongo-express
+    image: mongo-express:1.0.0-alpha
     restart: always
     networks:
       - rede
@@ -38,8 +38,7 @@ services:
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: root
-      ME_CONFIG_MONGODB_PORT: 27017
-      # ME_CONFIG_MONGODB_URL: mongodb://root:root@mongo:27017/
+      ME_CONFIG_MONGODB_URL: mongodb://root:root@mongo:27017/
     depends_on:
       - mongo
 
