@@ -8,6 +8,6 @@ Projeto de desenvolvimento de um blog pessoal com base em NodeJS e MongoDB.
 2. Javascript
 3. NodeJS
 4. Express
-5. MongoDB
+5. MySQL
 6. Materialize CSS
 7. HTML
