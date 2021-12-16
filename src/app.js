@@ -38,7 +38,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-// Server config
+// Final Server config and start
 const port = process.env.NODEJS | 3000
 
 app.listen(port, () => console.log("Server ON"))
