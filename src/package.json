@@ -1,21 +1,16 @@
 {
-  "name": "docker-nodejs-mysql",
-  "description": "Manutenção de um ambiente de desenvolvimento Docker para trabalhos com NodeJS e MySQL.",
-  "version": "1.0.0",
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --legacy-watch app.js",
-    "start": "node app.js"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gusscamargo/docker-nodejs-mysql"
-  },
-  "keywords": [],
-  "author": "Gustavo Michels de Camargo",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gusscamargo/docker-nodejs-mysql/issues"
-  },
-  "homepage": "https://github.com/gusscamargo/docker-nodejs-mysql"  
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  }
 }
