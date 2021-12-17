@@ -9,9 +9,13 @@ const post = new Schema({
         auto: true
     },
     title: String,
-    author: {
+    authorName: {
         type: String,
         default: "Gustavo Michels de Camargo"
+    },
+    authorId: {
+        type: Schema.ObjectId,
+        required: true
     },
     body: String,
     tags: [{
@@ -28,6 +32,10 @@ const post = new Schema({
     views: {
         type: Number,
         default: 0
+    },
+    commentsEnabled:{
+        type: Boolean,
+        default: true
     },
     comments: [{
         _id: {
