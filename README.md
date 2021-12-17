@@ -11,3 +11,10 @@ Projeto de desenvolvimento de um blog pessoal com base em NodeJS e MongoDB.
 5. MongoDB
 6. Materialize CSS
 7. HTML
+
+
+## Andamento do projeto:
+1. Construção do ambiente de desenvolvimento: ok
+2. Construção do esqueleto base NodeJS com express: ok
+3. Fluxo de dados da aplicação: em construção
+4. Template do layout das paginas: em construção
