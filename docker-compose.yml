@@ -15,6 +15,7 @@ services:
       - rede
     depends_on:
       - mongo
+      - redis
 
   mongo:
     image: mongo:4.2
@@ -41,6 +42,12 @@ services:
       ME_CONFIG_MONGODB_URL: mongodb://root:root@mongo:27017/
     depends_on:
       - mongo
+
+  redis:
+    image: redis:6
+    restart: always
+    networks:
+      - rede
 
 
 volumes: 

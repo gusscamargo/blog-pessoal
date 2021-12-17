@@ -11,6 +11,7 @@ Projeto de desenvolvimento de um blog pessoal com base em NodeJS e MongoDB.
 5. MongoDB
 6. Materialize CSS
 7. HTML
+8. Redis
 
 
 ## Andamento do projeto:
